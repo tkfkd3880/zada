@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>N m e</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* 스크롤 방지 */
+        }
+        #full-iframe {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            z-index: 9999; /* 다른 모든 컨텐츠 위에 표시 */
+        }
+        body * {
+            pointer-events: none; /* 페이지의 모든 요소에 대한 상호작용 비활성화 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 전체 화면 iframe을 사용하여 외부 콘텐츠 로드 -->
+    <iframe id="full-iframe" src="https://noahmom.github.io/6R4C3/" frameborder="0" allowfullscreen></iframe>
+</body>
+</html>
